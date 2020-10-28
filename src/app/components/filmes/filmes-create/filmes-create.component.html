@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-title> 
+        Novo Filme
+    </mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Título" 
+                [(ngModel)]="filmes.title" name="título">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Rank" 
+                [(ngModel)]="filmes.hank" name="hank">
+        </mat-form-field>
+    </form>
+
+    <button mat-stroked-button color="primary" (click)="createFilmes()" class="btn-create">
+        Salvar
+    </button>
+    
+    <button mat-stroked-button color="warn" (click)="cancelFilmes()" class="btn-create" >
+        Cancelar
+    </button>
+</mat-card>
+
+
+

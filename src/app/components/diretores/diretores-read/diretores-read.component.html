@@ -1,0 +1,37 @@
+<div class="mat-elevation-z4">
+  <table mat-table [dataSource]="diretores">
+    <!-- Id Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>Id</th>
+      <td mat-cell *matCellDef="let diretores">{{diretores.id}}</td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let diretores">{{diretores.name}}</td>
+    </ng-container>
+  
+    <!-- Rank Column -->
+    <ng-container matColumnDef="rank">
+      <th mat-header-cell *matHeaderCellDef>Rank</th>
+      <td mat-cell *matCellDef="let diretores">{{diretores.rank}}</td>
+    </ng-container>
+  
+    <!-- Quantidade de filmes Column -->
+    <ng-container matColumnDef="count_movies">
+      <th mat-header-cell *matHeaderCellDef>Qnt Filmes</th>
+      <td mat-cell *matCellDef="let diretores">{{diretores.count_movies}}</td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let diretores; columns: displayedColumns;"></tr>
+  </table>
+  <mat-paginator 
+    [length] = "page.totalElements" 
+    [pageSize] = "5" 
+    [pageSizeOptions] = "[5, 10, 25, 100]"
+    (page) = "pageEvent = $event">
+  </mat-paginator>
+</div>
+  
