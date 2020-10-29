@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class FilmesServices {
 
-  baseUrl = "http://localhost:3000/movies"
+  baseUrl = "http://localhost:3001/movies"
 
   constructor( private snackBar : MatSnackBar, private http: HttpClient) { }
 

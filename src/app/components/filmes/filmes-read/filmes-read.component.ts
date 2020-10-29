@@ -8,8 +8,9 @@ import { Filmes } from '../filmes.model';
   styleUrls: ['./filmes-read.component.css']
 })
 export class FilmesReadComponent implements OnInit {
-  filmes : Filmes[]
+  filmes : Filmes[] = []
   displayedColumns = ['id', 'title', 'hank']
+  p
 
   constructor(private filmesServices: FilmesServices) { }
 

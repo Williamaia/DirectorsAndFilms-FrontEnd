@@ -1,3 +1,80 @@
 table {
     width: 100%;
 }
+
+.label-body-table{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #5F697D;
+}
+  
+.body-table{
+    height: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.row-table{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my-pagination > pagination-template > ul{
+    margin: 40px 0 80px !important;
+  }
+  
+  .my-pagination /deep/ .ngx-pagination .current {
+    background: transparent;
+    color: #F0A948 !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Circular Std Book";
+    margin: 0 10px !important;
+  }
+  
+  .my-pagination /deep/ .ngx-pagination {
+    background: transparent;
+    color: #5F697D !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    font-family: "Circular Std Book" !important;
+    margin: 40px 0 20px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .my-pagination /deep/ .ngx-pagination a {
+    border: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+    margin: 0 10px;
+  }
+  
+  .my-pagination /deep/ .ngx-pagination .disabled {
+    margin: 0 10px;
+  }
+
+  .tb-header{
+    padding: 15px 30px 0 60px;
+    box-sizing: border-box;
+  }
+
+  .tb-header > .tb-header-item{
+    font-size: 14px !important;
+    font-weight: 500 !important;
+  }
