@@ -1,4 +1,9 @@
 <div class="mat-elevation-z4">
+  <div class="row-table tb-header">
+    <div class="col s3 label-body-table tb-header-item">ID</div>
+    <div class="col s3 label-body-table tb-header-item">Título</div>
+    <div class="col s3 label-body-table tb-header-item">Rank</div>
+  </div> 
   <div class="row body-table" *ngFor="let f of filmes | paginate: {itemsPerPage:5, currentPage:p}; let i= index" [ngClass]="{'table-body-background': i%2 == 0 }">
     <div class="row-table">
       <div class="col s3 label-body-table" >{{f.id}}</div>
